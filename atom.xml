@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Coding Diary of Totz]]></title>
+  <link href="http://totzYuta.github.io/atom.xml" rel="self"/>
+  <link href="http://totzYuta.github.io/"/>
+  <updated>2014-07-27T23:26:33+09:00</updated>
+  <id>http://totzYuta.github.io/</id>
+  <author>
+    <name><![CDATA[Totz]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[First Article]]></title>
+    <link href="http://totzYuta.github.io/blog/2014/07/27/first-article/"/>
+    <updated>2014-07-27T23:23:10+09:00</updated>
+    <id>http://totzYuta.github.io/blog/2014/07/27/first-article</id>
+    <content type="html"><![CDATA[<p>This is my first article.</p>
+]]></content>
+  </entry>
+  
+</feed>
