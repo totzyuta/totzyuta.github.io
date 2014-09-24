@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Created CLI Tool to Tweet from Terminal by Ruby"
+title: "CLI Tool to Tweet from Terminal - twit"
 date: 2014-09-24 15:28:09 +0900
 comments: true
 categories: 
@@ -12,6 +12,7 @@ I developed an application to tweet from terminal which I wanted (and actually a
 
 Let me show the demo of it and how to install.
 
+
 ## How to Use 
 
 You can tweet as you use a command in terminal.
@@ -19,6 +20,7 @@ You can tweet as you use a command in terminal.
 ```
 $ twit "It is posted from terminal."
 ```
+
 
 ## How to Install
 
