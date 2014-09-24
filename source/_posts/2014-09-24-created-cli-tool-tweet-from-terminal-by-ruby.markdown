@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Created CLI Tool Tweet from Terminal by Ruby"
+title: "Created CLI Tool to Tweet from Terminal by Ruby"
 date: 2014-09-24 15:28:09 +0900
 comments: true
 categories: 
