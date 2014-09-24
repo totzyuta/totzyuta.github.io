@@ -4,7 +4,7 @@
   <title><![CDATA[Coding Diary of Totz]]></title>
   <link href="http://totzYuta.github.io/atom.xml" rel="self"/>
   <link href="http://totzYuta.github.io/"/>
-  <updated>2014-09-24T16:06:47+09:00</updated>
+  <updated>2014-09-24T16:12:58+09:00</updated>
   <id>http://totzYuta.github.io/</id>
   <author>
     <name><![CDATA[Totz]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Created CLI Tool to Tweet from Terminal by Ruby]]></title>
+    <title type="html"><![CDATA[CLI Tool to Tweet from Terminal - twit]]></title>
     <link href="http://totzYuta.github.io/blog/2014/09/24/created-cli-tool-tweet-from-terminal-by-ruby/"/>
     <updated>2014-09-24T15:28:09+09:00</updated>
     <id>http://totzYuta.github.io/blog/2014/09/24/created-cli-tool-tweet-from-terminal-by-ruby</id>
