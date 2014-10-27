@@ -68,7 +68,7 @@ You can clone the repository and set up by the commands below.
 Set the theme by editing ~/.zshrc file. I chose a theme, avit.
 
 ```
-export ZSH_THEME="robbyrussell"	
+export ZSH_THEME="robbyrussell"
 ```
 
 All themes are in ~/.oh-my-zsh/themes/ and also check here: https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
