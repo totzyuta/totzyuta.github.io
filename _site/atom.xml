@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Coding Diary of Totz]]></title>
+  <link href="http://totzYuta.github.io/atom.xml" rel="self"/>
+  <link href="http://totzYuta.github.io/"/>
+  <updated>2014-09-24T16:12:58+09:00</updated>
+  <id>http://totzYuta.github.io/</id>
+  <author>
+    <name><![CDATA[Totz]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[CLI Tool to Tweet from Terminal - twit]]></title>
+    <link href="http://totzYuta.github.io/blog/2014/09/24/created-cli-tool-tweet-from-terminal-by-ruby/"/>
+    <updated>2014-09-24T15:28:09+09:00</updated>
+    <id>http://totzYuta.github.io/blog/2014/09/24/created-cli-tool-tweet-from-terminal-by-ruby</id>
+    <content type="html"><![CDATA[<h2>twit</h2>
+
+<p>I developed an application to tweet from terminal which I wanted (and actually as practice of Ruby).</p>
+
+<p>Let me show the demo of it and how to install.</p>
+
+<h2>How to Use</h2>
+
+<p>You can tweet as you use a command in terminal.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ twit "It is posted from terminal."</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>How to Install</h2>
+
+<p>The repository of twit is here.</p>
+
+<p><a href="https://github.com/totzYuta/twit">https://github.com/totzYuta/twit</a></p>
+
+<p>You can start to use this application just four steps.</p>
+
+<h3>1. Clone the repository</h3>
+
+<p>First, clone this repository into your HOME path. (If you have much knowledge of linux, that&rsquo;s not a problem to clone into another place.)</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ git clone https://github.com/totzYuta/twit</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>2. Run setting file</h3>
+
+<p>Second, let you do setting of your twitter account.</p>
+
+<p>Anyway, let us enter the directory.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ cd ./twit/</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And run the setting file by ruby. (If you have not installed ruby, let you install it. I don&rsquo;t mention how to do it. Please google&hellip;)</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ ruby setting_twit.rb</span></code></pre></td></tr></table></div></figure>
+
+
+<p>After run the program, your default web browser will be automatically opened and the page will tell you to enter your Twitter ID and Password.</p>
+
+<p>You can get the PIN code after login. Copy and paste that after the words &ldquo;Please Enter Your PIN: &rdquo;</p>
+
+<h3>3. Set the pathes</h3>
+
+<p>Set the pathes to make it available to use &ldquo;twit&rdquo; command anywhere.</p>
+
+<p>Then, please set absolute path. Change &ldquo;YOUR_USER_NAME&rdquo; to your user name.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo ln -s /Users/YOUR_USER_NAME/twit/setting_twit.rb /usr/bin/
+</span><span class='line'>$ sudo ln -s /Users/YOUR_USER_NAME/twit/setting.rb /usr/bin/
+</span><span class='line'>$ sudo ln -s /Users/YOUR_USER_NAME/twit/twit /usr/bin/</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>4. Tweet!</h3>
+
+<p>Okay, that&rsquo;s it! You can Tweet from the terminal by &lsquo;twit&rsquo; command!</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ twit "It's tweeted  from terminal"</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>♪ Tweeted</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Conclusion</h2>
+
+<p>If you notice any problem, please let me konw. You can send me a message on Twitter (@yutaTotz) or create an issue at the repository&rsquo;s page.</p>
+
+<p>Thanks!</p>
+]]></content>
+  </entry>
+  
+</feed>
