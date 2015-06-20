@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: diary | Coding Diary of Totz]]></title>
+  <link href="http://totzYuta.github.io/blog/categories/diary/atom.xml" rel="self"/>
+  <link href="http://totzYuta.github.io/"/>
+  <updated>2015-06-20T18:47:03+09:00</updated>
+  <id>http://totzYuta.github.io/</id>
+  <author>
+    <name><![CDATA[Totz]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Set Up CUI Environment of iTerm and zsh for New Mac]]></title>
+    <link href="http://totzYuta.github.io/blog/2014/09/29/set-up-cui-environment-of-iterm-and-zsh-for-new-mac/"/>
+    <updated>2014-09-29T01:34:44+09:00</updated>
+    <id>http://totzYuta.github.io/blog/2014/09/29/set-up-cui-environment-of-iterm-and-zsh-for-new-mac</id>
+    <content type="html"><![CDATA[<h2>New Mac</h2>
+
+<p>I love CUI, commands, the world of characters. And I got a new pc of OS X because of an internship of Cyber Agent I joined this summer. So I set up comfortable environment for nice CUI life by iTerm and zsh.</p>
+
+<h2>iTerm</h2>
+
+<h3>Install</h3>
+
+<p>First, I installed iTerm from the URL below.</p>
+
+<p><a href="http://iterm2.com/index.html">http://iterm2.com/index.html</a></p>
+
+<p>That is nicer than default terminal of OS X, I guess. That is very customizable.</p>
+
+<h3>Theme Color</h3>
+
+<p>iTerm has a lot of color themes. You can access the repository fro the URL below.</p>
+
+<p><a href="https://github.com/mbadolato/iTerm2-Color-Schemes">https://github.com/mbadolato/iTerm2-Color-Schemes</a></p>
+
+<p>iTerm2-Color-Shemes is very cool and easy tool. The README.md is really easy to understand and follow the introduction. I could install that easily.</p>
+
+<p>I chose Espresso. That theme is not bright so I prefer.</p>
+
+<h2>zsh</h2>
+
+<p>zsh is a kind of shell. The default shell of OS X is bash. bash is also great (the author looks so strong anyway..lol) but zsh is nice for geeks who want to customize a shell easily and well.</p>
+
+<p>First installed Homebrew to install other programs.</p>
+
+<p><a href="http://brew.sh/">http://brew.sh/</a></p>
+
+<p><code>
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+</code></p>
+
+<p>And installed zsh by brew command.</p>
+
+<p><code>
+$ brew install zsh
+</code></p>
+
+<p>You can change the default shell if you want.</p>
+
+<p><code>
+$ chsh -s /usr/local/bin/zsh
+</code></p>
+
+<p>And I really want to reccomend oh-my-zsh. That is really easy tool to set many plugins and cool theme for zsh.</p>
+
+<p>You can clone the repository and set up by the commands below.</p>
+
+<p><code>
+% git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+% cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+</code></p>
+
+<p>Set the theme by editing ~/.zshrc file. I chose a theme, avit.</p>
+
+<p><code>
+export ZSH_THEME="robbyrussell"
+</code></p>
+
+<p>All themes are in ~/.oh-my-zsh/themes/ and also check here: <a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Themes">https://github.com/robbyrussell/oh-my-zsh/wiki/Themes</a></p>
+
+<h2>CUI</h2>
+
+<p>That is all! CUI is really useful and fun. Let&rsquo;s enjoy it.</p>
+]]></content>
+  </entry>
+  
+</feed>

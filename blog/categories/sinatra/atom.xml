@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: sinatra | Coding Diary of Totz]]></title>
+  <link href="http://totzYuta.github.io/blog/categories/sinatra/atom.xml" rel="self"/>
+  <link href="http://totzYuta.github.io/"/>
+  <updated>2015-06-20T18:47:03+09:00</updated>
+  <id>http://totzYuta.github.io/</id>
+  <author>
+    <name><![CDATA[Totz]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Lightest Weight Sinatra App Template for Heroku  Deployment]]></title>
+    <link href="http://totzYuta.github.io/blog/2015/06/20/lightest-weight-sinatra-app-template-for-heroku-deployment/"/>
+    <updated>2015-06-20T17:39:17+09:00</updated>
+    <id>http://totzYuta.github.io/blog/2015/06/20/lightest-weight-sinatra-app-template-for-heroku-deployment</id>
+    <content type="html"><![CDATA[<p>I prefer use Sinatra to make simple web app rather than Ruby on Rails. And I like using Heroku when I wanna check simply how its going on.</p>
+
+<p>So I made a simplest Sinatra app to deploy the app as soon as possible. You can clone the reporitory and deploy it soon.</p>
+
+<p><a href="https://github.com/totzYuta/lightest-sinatra-app-for-heroku">Lightest Sinatra App for Heroku</a></p>
+
+<p>I made two versions, one is using database by PostgreSQL, and another is not using one. If you do not have to use database on Heroku, please checkout <code>light</code> branch.</p>
+
+<p>If you want to use database, please use master branch and do not forget runnning command below to add PostgreSQL addon for heroku.</p>
+
+<p><code>
+$ heroku addons:create heroku-postgresql
+</code></p>
+
+<p>And please edit migrate file to change the scheme of the table, or just remake the migration file. After finishing to edit the migration file, please run command below:</p>
+
+<p><code>
+$ heroku run rake db:migrate
+</code></p>
+
+<p>Please let you see README file for detailed usage.</p>
+
+<p>If you find any bug or ideas, shoot me a message to my twitter account (<a href="https://twitter.com/totzyuta">@totzyuta</a>) or create an issue on the <a href="https://github.com/totzYuta/lightest-sinatra-app-for-heroku">repository page</a>.</p>
+
+<p>Thank you.</p>
+]]></content>
+  </entry>
+  
+</feed>
