@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: ruby | Coding Diary of Totz]]></title>
-  <link href="http://totzYuta.github.io/blog/categories/ruby/atom.xml" rel="self"/>
-  <link href="http://totzYuta.github.io/"/>
-  <updated>2015-06-20T18:47:03+09:00</updated>
-  <id>http://totzYuta.github.io/</id>
+  <link href="http://totzyuta.github.io/blog/categories/ruby/atom.xml" rel="self"/>
+  <link href="http://totzyuta.github.io/"/>
+  <updated>2015-06-21T08:31:30+09:00</updated>
+  <id>http://totzyuta.github.io/</id>
   <author>
     <name><![CDATA[Totz]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Lightest Weight Sinatra App Template for Heroku  Deployment]]></title>
-    <link href="http://totzYuta.github.io/blog/2015/06/20/lightest-weight-sinatra-app-template-for-heroku-deployment/"/>
+    <link href="http://totzyuta.github.io/blog/2015/06/20/lightest-weight-sinatra-app-template-for-heroku-deployment/"/>
     <updated>2015-06-20T17:39:17+09:00</updated>
-    <id>http://totzYuta.github.io/blog/2015/06/20/lightest-weight-sinatra-app-template-for-heroku-deployment</id>
+    <id>http://totzyuta.github.io/blog/2015/06/20/lightest-weight-sinatra-app-template-for-heroku-deployment</id>
     <content type="html"><![CDATA[<p>I prefer use Sinatra to make simple web app rather than Ruby on Rails. And I like using Heroku when I wanna check simply how its going on.</p>
 
 <p>So I made a simplest Sinatra app to deploy the app as soon as possible. You can clone the reporitory and deploy it soon.</p>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Coding Diary of Totz]]></title>
-  <link href="http://totzYuta.github.io/atom.xml" rel="self"/>
-  <link href="http://totzYuta.github.io/"/>
-  <updated>2015-06-20T18:47:03+09:00</updated>
-  <id>http://totzYuta.github.io/</id>
+  <link href="http://totzyuta.github.io/atom.xml" rel="self"/>
+  <link href="http://totzyuta.github.io/"/>
+  <updated>2015-06-21T08:31:30+09:00</updated>
+  <id>http://totzyuta.github.io/</id>
   <author>
     <name><![CDATA[Totz]]></name>
     
@@ -14,10 +14,125 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Installing Go by Homebrew on Mac OS X]]></title>
+    <link href="http://totzyuta.github.io/blog/2015/06/21/installing-go-by-homebrew-on-mac-os-x/"/>
+    <updated>2015-06-21T08:29:53+09:00</updated>
+    <id>http://totzyuta.github.io/blog/2015/06/21/installing-go-by-homebrew-on-mac-os-x</id>
+    <content type="html"><![CDATA[<h2>Install go by brew</h2>
+
+<p>Install golang by brew. I think that&rsquo;s the easiest way to install go on OS X.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ brew install go
+</span><span class='line'>==&gt; Downloading https://downloads.sf.net/project/machomebrew/Bottles/go-1.4.yosemite.bottle.ta
+</span><span class='line'>######################################################################## 100.0%
+</span><span class='line'>==&gt; Pouring go-1.4.yosemite.bottle.tar.gz
+</span><span class='line'>==&gt; Caveats
+</span><span class='line'>As of go 1.2, a valid GOPATH is required to use the `go get` command:
+</span><span class='line'>  http://golang.org/doc/code.html#GOPATH
+</span><span class='line'>
+</span><span class='line'>`go vet` and `go doc` are now part of the go.tools sub repo:
+</span><span class='line'>  http://golang.org/doc/go1.2#go_tools_godoc
+</span><span class='line'>
+</span><span class='line'>To get `go vet` and `go doc` run:
+</span><span class='line'>  go get golang.org/x/tools/cmd/vet
+</span><span class='line'>  go get golang.org/x/tools/cmd/godoc
+</span><span class='line'>
+</span><span class='line'>You may wish to add the GOROOT-based install location to your PATH:
+</span><span class='line'>  export PATH=$PATH:/usr/local/opt/go/libexec/bin
+</span><span class='line'>==&gt; Summary
+</span><span class='line'>?  /usr/local/Cellar/go/1.4: 4557 files, 134M</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Set Path for Go</h2>
+
+<p>Go needs paths for his root directory. I wrote like that.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'># .zshrc
+</span><span class='line'># go
+</span><span class='line'>export GOROOT=/usr/local/opt/go/libexec
+</span><span class='line'>export GOPATH=$HOME/.go
+</span><span class='line'>export PATH=$PATH:$GOROOT/bin:$GOPATH/bin</span></code></pre></td></tr></table></div></figure>
+
+
+<p>It is actually religious problems how people set <code>$GOPATH</code> and <code>$GOROOT</code>. Let you set them up to your belief.</p>
+
+<h2>Run Tiny Program</h2>
+
+<p>To test, run tiny program of Hello World.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>~/workspace
+</span><span class='line'>▶ vi hello.go</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='go'><span class='line'><span class="c1">// hello.go</span>
+</span><span class='line'><span class="kn">package</span> <span class="nx">main</span>
+</span><span class='line'><span class="kn">import</span> <span class="s">&quot;fmt&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;Hello, world!&quot;</span><span class="p">)</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='go'><span class='line'><span class="err">~</span><span class="o">/</span><span class="nx">workspace</span>
+</span><span class='line'><span class="err">▶</span> <span class="k">go</span> <span class="nx">run</span> <span class="nx">hello</span><span class="p">.</span><span class="k">go</span>
+</span><span class='line'><span class="nx">Hello</span><span class="p">,</span> <span class="nx">world</span><span class="p">!</span><span class="o">%</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now it&rsquo;s working well!</p>
+
+<p>Next time, I will make a command tool or http server in Go.</p>
+
+<p>Maybe it is not good idea to web application in Go right&hellip;?</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Lightest Weight Sinatra App Template for Heroku  Deployment]]></title>
-    <link href="http://totzYuta.github.io/blog/2015/06/20/lightest-weight-sinatra-app-template-for-heroku-deployment/"/>
+    <link href="http://totzyuta.github.io/blog/2015/06/20/lightest-weight-sinatra-app-template-for-heroku-deployment/"/>
     <updated>2015-06-20T17:39:17+09:00</updated>
-    <id>http://totzYuta.github.io/blog/2015/06/20/lightest-weight-sinatra-app-template-for-heroku-deployment</id>
+    <id>http://totzyuta.github.io/blog/2015/06/20/lightest-weight-sinatra-app-template-for-heroku-deployment</id>
     <content type="html"><![CDATA[<p>I prefer use Sinatra to make simple web app rather than Ruby on Rails. And I like using Heroku when I wanna check simply how its going on.</p>
 
 <p>So I made a simplest Sinatra app to deploy the app as soon as possible. You can clone the reporitory and deploy it soon.</p>
@@ -48,9 +163,9 @@
   
   <entry>
     <title type="html"><![CDATA[Set Up CUI Environment of iTerm and zsh for New Mac]]></title>
-    <link href="http://totzYuta.github.io/blog/2014/09/29/set-up-cui-environment-of-iterm-and-zsh-for-new-mac/"/>
+    <link href="http://totzyuta.github.io/blog/2014/09/29/set-up-cui-environment-of-iterm-and-zsh-for-new-mac/"/>
     <updated>2014-09-29T01:34:44+09:00</updated>
-    <id>http://totzYuta.github.io/blog/2014/09/29/set-up-cui-environment-of-iterm-and-zsh-for-new-mac</id>
+    <id>http://totzyuta.github.io/blog/2014/09/29/set-up-cui-environment-of-iterm-and-zsh-for-new-mac</id>
     <content type="html"><![CDATA[<h2>New Mac</h2>
 
 <p>I love CUI, commands, the world of characters. And I got a new pc of OS X because of an internship of Cyber Agent I joined this summer. So I set up comfortable environment for nice CUI life by iTerm and zsh.</p>
@@ -125,9 +240,9 @@
   
   <entry>
     <title type="html"><![CDATA[CLI Tool to Tweet from Terminal - twit]]></title>
-    <link href="http://totzYuta.github.io/blog/2014/09/24/created-cli-tool-tweet-from-terminal-by-ruby/"/>
+    <link href="http://totzyuta.github.io/blog/2014/09/24/created-cli-tool-tweet-from-terminal-by-ruby/"/>
     <updated>2014-09-24T15:28:09+09:00</updated>
-    <id>http://totzYuta.github.io/blog/2014/09/24/created-cli-tool-tweet-from-terminal-by-ruby</id>
+    <id>http://totzyuta.github.io/blog/2014/09/24/created-cli-tool-tweet-from-terminal-by-ruby</id>
     <content type="html"><![CDATA[<h2>twit</h2>
 
 <p>I developed an application to tweet from terminal which I wanted (and actually as practice of Ruby).</p>

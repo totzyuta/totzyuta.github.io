@@ -3,34 +3,40 @@
   
   
   <url>
-    <loc>http://totzYuta.github.io/blog/2015/06/20/lightest-weight-sinatra-app-template-for-heroku-deployment/</loc>
+    <loc>http://totzyuta.github.io/blog/2015/06/21/installing-go-by-homebrew-on-mac-os-x/</loc>
+    <lastmod>2015-06-21T08:29:53+09:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://totzyuta.github.io/blog/2015/06/20/lightest-weight-sinatra-app-template-for-heroku-deployment/</loc>
     <lastmod>2015-06-20T17:39:17+09:00</lastmod>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>http://totzYuta.github.io/blog/2014/09/29/set-up-cui-environment-of-iterm-and-zsh-for-new-mac/</loc>
+    <loc>http://totzyuta.github.io/blog/2014/09/29/set-up-cui-environment-of-iterm-and-zsh-for-new-mac/</loc>
     <lastmod>2014-09-29T01:34:44+09:00</lastmod>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>http://totzYuta.github.io/blog/2014/09/24/created-cli-tool-tweet-from-terminal-by-ruby/</loc>
+    <loc>http://totzyuta.github.io/blog/2014/09/24/created-cli-tool-tweet-from-terminal-by-ruby/</loc>
     <lastmod>2014-09-24T15:28:09+09:00</lastmod>
     <priority>0.8</priority>
   </url>
   
   
   <url>
-    <loc>http://totzYuta.github.io/blog/archives/</loc>
-    <lastmod>2015-06-20T18:47:03+09:00</lastmod>
+    <loc>http://totzyuta.github.io/blog/archives/</loc>
+    <lastmod>2015-06-21T08:31:30+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://totzYuta.github.io/</loc>
-    <lastmod>2015-06-20T18:47:03+09:00</lastmod>
+    <loc>http://totzyuta.github.io/</loc>
+    <lastmod>2015-06-21T08:31:30+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>

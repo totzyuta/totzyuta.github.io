@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: diary | Coding Diary of Totz]]></title>
-  <link href="http://totzYuta.github.io/blog/categories/diary/atom.xml" rel="self"/>
-  <link href="http://totzYuta.github.io/"/>
-  <updated>2015-06-20T18:47:03+09:00</updated>
-  <id>http://totzYuta.github.io/</id>
+  <link href="http://totzyuta.github.io/blog/categories/diary/atom.xml" rel="self"/>
+  <link href="http://totzyuta.github.io/"/>
+  <updated>2015-06-21T08:31:30+09:00</updated>
+  <id>http://totzyuta.github.io/</id>
   <author>
     <name><![CDATA[Totz]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Set Up CUI Environment of iTerm and zsh for New Mac]]></title>
-    <link href="http://totzYuta.github.io/blog/2014/09/29/set-up-cui-environment-of-iterm-and-zsh-for-new-mac/"/>
+    <link href="http://totzyuta.github.io/blog/2014/09/29/set-up-cui-environment-of-iterm-and-zsh-for-new-mac/"/>
     <updated>2014-09-29T01:34:44+09:00</updated>
-    <id>http://totzYuta.github.io/blog/2014/09/29/set-up-cui-environment-of-iterm-and-zsh-for-new-mac</id>
+    <id>http://totzyuta.github.io/blog/2014/09/29/set-up-cui-environment-of-iterm-and-zsh-for-new-mac</id>
     <content type="html"><![CDATA[<h2>New Mac</h2>
 
 <p>I love CUI, commands, the world of characters. And I got a new pc of OS X because of an internship of Cyber Agent I joined this summer. So I set up comfortable environment for nice CUI life by iTerm and zsh.</p>
